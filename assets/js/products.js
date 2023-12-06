@@ -36,18 +36,17 @@ window.onload = async () => {
             }
         };
 
-      
+
         let productsResponse = await fetch("http://localhost:8081/api/products");
         let products = await productsResponse.json();
 
         selectCategoryEl.onchange = () => {
-            productsListEl.innerHTML = ""; 
+            productsListEl.innerHTML = "";
 
-              if (searchTypeEl.value === "category") {
-            
-               let selectedCategory = selectCategoryEl.value;
-                for (let category of categories) 
-                {
+            if (searchTypeEl.value === "category") {
+
+                let selectedCategory = selectCategoryEl.value;
+                for (let category of categories) {
                     displayCategory(category);
                 }
             }
@@ -63,13 +62,11 @@ window.onload = async () => {
                                 <p>Price: ${product.unitPrice}</p><hr>`;
         productsListEl.appendChild(productInfo);
     }
-      function displayCategory(category) {
+    function displayCategory(category) {
         let categoryInfo = document.createElement("div");
-        categoryInfo.innerHTML = `<p>Category ID: ${category.categoryId}</p>
-                                <p>Name: ${category.name}</p>
+        categoryInfo.innerHTML = `<p>Name: ${category.name}</p>
                                 <p>Description: ${category.description}</p><hr>`;
         productsListEl.appendChild(categoryInfo);
-        
     }
 
 };
