@@ -1,0 +1,68 @@
+body {
+    margin: 70px;
+    background-color: rgb(152, 143, 63);
+    font-size: 20px;
+    margin-left: 40px;
+    
+}
+
+
+#park-locationName {
+    visibility: hidden;
+}
+
+#select-state {
+    margin-top: 30px;
+   overflow: scroll;
+   max-height: 100%;
+   height: auto;
+
+}
+
+#select-park {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#park-type {
+    margin-right: none;
+    margin-top: 5px;
+}
+
+#park-id {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#park-name {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#park-location {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.display-4 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+
+}
+
+
+header{
+    margin-top: 20px;
+}
+
+b {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
