@@ -27,7 +27,7 @@ window.onload = () => {
                                 productInfo.innerHTML = `<p>Product ID: ${product.productId}</p>
                                                         <p>Name: ${product.productName}</p>
                                                         <p>Price: ${product.unitPrice}</p>
-                                                        <a href="/details.html?">See Details</a><hr>`;
+                                                        <a href="frontend/details.html?id=${product.categoryId}">More Details</a><hr>`;
                                 productsListEl.appendChild(productInfo);
                             }
                         })
